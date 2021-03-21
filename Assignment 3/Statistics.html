@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Data Center</title>
+    <link rel = "icon" href = "img/Icon.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="chart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #cfc493;
+}
+
+table 
+{
+  width: 100%;
+  font: 17px Calibri;
+}
+
+table, th, td 
+{
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  text-align: center;
+}
+      
+input[type='button'] 
+{
+  font: 15px Calibri;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+        
+input[type='text'], select 
+{
+  font: 17px Calibri;
+  text-align: center;
+  border: solid 1px #ccc;
+  width: auto;
+  padding: 2px 3px
+}
+
+.chart-container {
+  width: 80%;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #006747;
+  color: #ffffff;
+}
+</style>
+</head>
+<body bgcolor="#ffffff">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <div class="jumbotron" style="background-color:#006747;color:#ffffff">
+        <center>
+		<br>
+		<img src="img/USF.png" alt="Icon" height="75" width="150"/>
+		<h1>Education Data Center</h1>
+		<h3>U.S Department of Agriculture - Economic Research Service</h3>
+		<br>
+	</center>
+    </div>
+    <div class="navbar">
+	<b>
+  	<a href="Index.html">Home</a> 
+  	<a class="active">Statistics</a> 
+  	<a href="Details.html">Details</a> 
+  	<a href="AboutUs.html">About Us</a>
+	</b>
+    </div>
+    <div class="row">
+	<br>	    
+       	<center><h2>Statistics</h2>
+	<div class="col-sm-12">
+            <p></p><br>
+	</div>
+	<div id="container" style="width:700px;">
+	    <script src="js/script.js"></script>
+    	</div>
+	</center>
+    </div>
+    <br><br><br>
+    <div class="wrapper">
+	<center><h2>Comparing the Completion Rates using Bar Chart</h2><br>
+  	<canvas id="myChart" width="700" height="300"></canvas>
+    </div>
+    <script src="js/barChart.js"></script>
+    <br><br>
+    <div class="footer">
+  	<p><small>Copyright &copy; 2021 USF. All Rights Reserved.</small></p>
+    </div>
+</body>
+</html>

@@ -4,7 +4,6 @@ var crudApp = new function () {
             { ID: '2', County_Name: 'Pinellas', State: 'Florida', Total_Percentage: 31.70 },
             { ID: '3', County_Name: 'Athens', State: 'Ohio', Total_Percentage: 30.20 }
         ]
-
         this.state = ['Florida' , 'Ohio'];
         this.col = [];
         this.createTable = function () {
